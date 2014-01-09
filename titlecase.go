@@ -31,7 +31,7 @@ var (
 	reSmallLast          = regexp.MustCompile(fmt.Sprintf("\\b(?i:(%s))[%s]?$", small, punct))
 	reMacMc              = regexp.MustCompile(`^([Mm]a?c)(\w+)`)
 	reInlinePeriod       = regexp.MustCompile(`(?i:[a-z][.][a-z])`)
-	reCapFirst           = regexp.MustCompile(fmt.Sprintf("^[%s]*?([A-Za-z])", punct))
+	reCapFirst           = regexp.MustCompile(fmt.Sprintf("^[%s]*?([A-Za-z\\pL])", punct))
 	reSubphrase          = regexp.MustCompile(fmt.Sprintf("([:.;?!][ ])(?i:(%s))", small))
 	reAllCaps            = regexp.MustCompile(fmt.Sprintf("^[A-Z\\s%s]+$", punct))
 	reUpperCaseInitials  = regexp.MustCompile("^(?:[A-Z]{1}\\.{1}|[A-Z]{1}\\.{1}[A-Z]{1})+$")

@@ -138,6 +138,10 @@ var tests = [][]string{
 		"this is http://foo.com",
 		"This Is http://foo.com",
 	},
+	[]string{
+		"é mesmo",
+		"É Mesmo",
+	},
 }
 
 func TestTitle(t *testing.T) {
