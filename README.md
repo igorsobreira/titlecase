@@ -5,26 +5,7 @@ Titlecase is a port of [Python's titlecase module](https://pypi.python.org/pypi/
 It capitalizes all words in the string to Title Caps attempting to be smart about
 small words like a/an/the.
 
-These small words will also be uncapitalized, so titlecase also works with uppercase
-strings.
-
-The list of small words which are not capped comes from the New York Times Manual of
-Style, plus 'vs' and 'v'.
-
-## Usage:
-
-```go
-import "github.com/igorsobreira/titlecase"
-
-func main() {
-    println(titlecase.Title("this and that")) // output: "This and That"
-}
-```
-
-See the tests for all the use cases handled.
-
-Thanks to Stuart Colville for the [Python version](https://pypi.python.org/pypi/titlecase).
-And John Gruber for the [original version in Perl](http://daringfireball.net/2008/05/title_case)
+See [documentation and examples on godoc.org](http://godoc.org/github.com/igorsobreira/titlecase)
 
 ## License
 

@@ -1,3 +1,17 @@
+// Titlecase package capitalizes all words in the string to Title Caps attempting to
+// be smart about small words like a/an/the.
+//
+// These small words will also be uncapitalized, so titlecase also
+// works with uppercase strings.
+//
+// The list of small words which are not capped comes from the New York
+// Times Manual of Style, plus 'vs' and 'v'.
+//
+// Titlecase is a port of Python's titlecase module in Go.
+//
+// Thanks to Stuart Colville for the Python version: https://pypi.python.org/pypi/titlecase.
+// And John Gruber for the original version in Perl: http://daringfireball.net/2008/05/title_case.
+//
 package titlecase
 
 import (
