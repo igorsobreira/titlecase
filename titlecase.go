@@ -22,7 +22,7 @@ import (
 
 var (
 	punct = "!\"#$%&'‘()*+,\\-./:;?@[\\]_`{|}~"
-	small = `a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v\.?|via|vs\.?`
+	small = `a|an|and|as|at|but|by|en|for|if|in|of|on|or|the|to|v\.?|via|vs\.?|with`
 
 	reLineBreak          = regexp.MustCompile("[\r\n]+")
 	reWhiteSpace         = regexp.MustCompile("[\t ]+")
